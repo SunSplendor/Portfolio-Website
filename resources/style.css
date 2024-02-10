@@ -1,0 +1,247 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #222;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    background-color: #333333; 
+    font-family: 'Open Sans';
+    transition: background-color 0.3s ease;
+    z-index: 100;
+    position: fixed;
+    
+}
+
+.navigation {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 4rem;
+    
+}
+
+.social-icons {
+    margin-right: auto;
+    margin-left: 4rem;
+    display: flex;
+    gap: 3rem;
+    
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    background-color: #808080;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    transition: background-color 0.4s ease;
+}
+
+.logo:hover {
+    background-color: lightgray;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s ease;
+}
+
+.logo.instagram-logo {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/peelicons-glyph/512/instagram__social__media_-256.png);
+}
+
+.logo.linkedin-logo { 
+    background-image: url(https://cdn2.iconfinder.com/data/icons/neon-line-social-circles-black/100/Neon_Line_Social_Circles_50Icon_10px_grid-25-256.png);
+}
+
+.logo.github-logo {  
+    background-image: url(https://cdn2.iconfinder.com/data/icons/neon-line-social-circles/100/Neon_Line_Social_Circles_50Icon_10px_grid-18-256.png);
+}
+
+.navigation a {
+    
+    text-decoration: none;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 1rem;
+    color: lightgrey;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 7rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    background-color: #444;
+}
+
+.navigation a:not(:first-child) {
+    margin-left: 4rem;
+}
+
+@media (max-width: 1100px) {
+    .navigation a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        display: block;
+        
+    }
+}
+
+@media (max-width: 1100px) {
+    .navigation a:not(:first-child) {
+        margin-left: 0rem;
+    }
+}
+
+.navigation a:hover {
+    background-color: #555;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:active {
+    transform: translateY(2px);
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 58rem; 
+    font-family: 'Open Sans';
+    padding-top: 8rem;
+}
+
+@media (max-width: 1100px) {
+    #main-container {
+        padding-top: 1rem;
+    }
+}
+
+.myphoto {
+    margin-left: auto;
+    margin-right: 7%;
+    
+}
+
+@media (max-width: 1100px) {
+    .myphoto {
+        margin-right: 2%;
+    }
+}
+
+#main-photo {
+    width: 30rem;
+    border-radius: 7%;
+    margin-left: 3rem;
+}
+
+@media (max-width: 1100px) {
+    #main-photo {
+        width: 20rem;
+        margin-left: 1rem;
+    }
+}
+
+.heading {
+    margin-left: 15%;
+    position: relative;
+    top: 5rem;
+}
+
+@media (max-width: 1100px) {
+    .heading {
+        margin-left: 5%;
+    }
+}
+
+
+.heading h1 {
+    color: burlywood;
+    font-size: 5rem;
+    font-family: 'Kalam', 'Open Sans';
+    line-height: 1.3;
+    text-shadow: 0 5px 15px #555;
+    position: relative;
+    top: -10rem;
+    
+}
+
+@media (max-width: 1100px) {
+    .heading h1 {
+        font-size: 3rem;
+    }
+}
+
+.heading p {
+    position: relative;
+    color: lightgrey;
+    font-family: 'Open Sans';
+    font-size: 1.7rem;
+    
+}
+
+@media (max-width: 1100px) {
+    .heading p {
+        font-size: 1.1rem;
+    }
+}
+
+.greeting {
+    left: -5rem;
+    top: -10rem;
+    line-height: 2.5;
+}
+
+@media (max-width: 1100px) {
+    .greeting {
+        left: 0rem;
+    }
+}
+
+.description {
+    text-shadow: 0 5px 15px black;
+    position: relative;
+    top: -10rem;
+}
+
+.first,
+.simple {
+    position: relative;
+    top: 7rem;
+    line-height: 1.3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.footer-info {
+    padding: 10px 20px;
+    color: grey;
+    font-size: 0.8rem;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+.footer-info span {
+    display: block;
+}
